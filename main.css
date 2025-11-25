@@ -2,6 +2,9 @@
     font-family: Pixel;
     src: url('fonts/SynthPixel-R922e.ttf') format('truetype');
 }
+@font-face {
+    font-family: pixy;
+    src: url('fonts/pixy.ttf') format('truetype');}
 body {
     font-family: Pixel, 'Arial Narrow', Arial, sans-serif;
     background-image: url('images/citybg.jpg');
@@ -9,12 +12,39 @@ body {
 h1 {
     font-weight: normal;
     color: #f55cf0;
+    font-size: 3.8em;
 }
 h2 {
     font-weight: normal;
-    color: #01BAEF
+    color: #01BAEF;
+    font-size: 1.3em;
+    letter-spacing: -1.2px;
+    font-family: pixy, 'Arial Narrow', Arial, sans-serif;
 }
 p {
     color: #0CBABA;
+    font-size: 1em;
+    font-family: pixy, 'Arial Narrow', Arial, sans-serif;
+}
+footer p {
+    color: #c9abab;
+}
+
+.top {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
